@@ -1,0 +1,80 @@
+.post-card {
+  border: 1px solid #e0e0e0; /* Light border for subtle separation */
+  border-radius: 6px; /* Slightly rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  overflow: hidden; /* Contain overflow within borders */
+  transition: transform 0.15s; /* Smooth scaling effect */
+  margin-bottom: 16px; /* Less spacing between cards */
+  padding: 12px; /* Internal padding for a compact look */
+  width: 300px;
+  
+  
+}
+
+.post-card:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.post-card img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Slight rounding for images */
+}
+
+.post-card h2 {
+  font-size: 1.2rem; /* Slightly smaller font for the title */
+  font-weight: 600; /* Slightly bolder for emphasis */
+  color: #333; /* Darker text for readability */
+  margin: 0.5rem 0; /* Compact spacing around the title */
+}
+
+.post-card p {
+  color: #555; /* Neutral text color for description */
+  margin: 0.5rem 0; /* Consistent spacing */
+}
+
+.creator-profile {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  margin-top: 1rem; /* Spacing above the profile */
+  border-top: 1px solid #e0e0e0; /* Divider line */
+  padding-top: 10px; /* Spacing above the divider */
+}
+
+.creator-profile img {
+  width: 36px; /* Smaller fixed width for profile images */
+  height: 36px; /* Smaller fixed height for profile images */
+  border-radius: 50%; /* Circular profile images */
+  margin-right: 0.6rem; /* Spacing between image and text */
+}
+
+.creator-name {
+  font-weight: 500; /* Medium weight for creator name */
+  color: #333; /* Dark color for name */
+  font-size: 1rem; /* Consistent font size */
+}
+
+.created-at {
+  color: #888; /* Muted color for timestamp */
+  font-size: 0.85rem; /* Smaller font for timestamp */
+}
+
+.action-button {
+  display: flex; /* Use flexbox for button layout */
+  justify-content: flex-end; /* Align button to the right */
+  margin-top: 0.75rem; /* Spacing above button */
+}
+
+.action-button .ant-btn {
+  font-size: 0.9rem; /* Smaller font for compact buttons */
+  padding: 4px 12px; /* Less padding for compact size */
+  height: auto; /* Auto height for flexible sizing */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .post-card {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px; /* Compact padding on small screens */
+  }
+}
